@@ -56,7 +56,7 @@
 
 
 
-<div class="form-control caja<%= :empresa_id %>">
+<div class="form-group<%= :empresa_id %>">
 <%= f.label :empresa_id, :class=>"col-sm-2 control-label" %>
 <div class="col-sm-5">
   <%= f.select( "empresa_id",Empresa.all.collect{|l| [ l.nombre, l.id ] }, {include_blank: 'Selecciona Empresa'}) %>
