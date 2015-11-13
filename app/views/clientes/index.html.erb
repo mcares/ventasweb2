@@ -23,6 +23,7 @@
         <td><%= cliente.direccion %></td>
         <td><%= cliente.comuna %></td>
         <td><%= link_to 'Detalle', cliente %></td>
+              <% if current_usuario.email == cliente.usuario.email  %>
         <td><%= link_to 'Editar', edit_cliente_path(cliente) %></td>
         <td><%= link_to 'Eliminar', cliente, method: :delete, data: { confirm: '¿Estas seguro de Eliminar al cliente?' } %></td>
       </tr>
