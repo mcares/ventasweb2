@@ -87,17 +87,4 @@ ActiveRecord::Schema.define(version: 20151024154905) do
   add_index "vens", ["producto_id"], name: "index_vens_on_producto_id"
   add_index "vens", ["vendedor_id"], name: "index_vens_on_vendedor_id"
 
-  create_table "venta", force: true do |t|
-    t.integer  "vendedor_id"
-    t.integer  "producto_id"
-    t.integer  "cliente_id"
-    t.integer  "cantidad"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "venta", ["cliente_id"], name: "index_venta_on_cliente_id"
-  add_index "venta", ["producto_id"], name: "index_venta_on_producto_id"
-  add_index "venta", ["vendedor_id"], name: "index_venta_on_vendedor_id"
-
 end
