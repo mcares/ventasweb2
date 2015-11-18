@@ -60118,3 +60118,328 @@ Processing by ClientesController#new as HTML
   Rendered clientes/new.html.erb within layouts/application (7.0ms)
   Rendered shared/_navbar.html.erb (0.0ms)
 Completed 200 OK in 125ms (Views: 120.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-13 22:01:40 -0300
+Processing by InicioController#index as HTML
+  Rendered inicio/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios"  WHERE "usuarios"."id" = 2  ORDER BY "usuarios"."id" ASC LIMIT 1[0m
+  Rendered shared/_navbar.html.erb (9.0ms)
+Completed 200 OK in 123ms (Views: 121.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-13 22:01:40 -0300
+
+
+Started GET "/assets/empresas.css?body=1" for 127.0.0.1 at 2015-11-13 22:01:40 -0300
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2015-11-13 22:01:40 -0300
+
+
+Started GET "/assets/productos.css?body=1" for 127.0.0.1 at 2015-11-13 22:01:40 -0300
+
+
+Started GET "/assets/vendedors.css?body=1" for 127.0.0.1 at 2015-11-13 22:01:40 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-13 22:01:41 -0300
+
+
+Started GET "/assets/vens.css?body=1" for 127.0.0.1 at 2015-11-13 22:01:41 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 22:01:41 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 22:01:41 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 22:01:41 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 22:01:41 -0300
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-13 22:01:41 -0300
+
+
+Started GET "/assets/empresas.js?body=1" for 127.0.0.1 at 2015-11-13 22:01:41 -0300
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2015-11-13 22:01:41 -0300
+
+
+Started GET "/assets/vendedors.js?body=1" for 127.0.0.1 at 2015-11-13 22:01:41 -0300
+
+
+Started GET "/assets/productos.js?body=1" for 127.0.0.1 at 2015-11-13 22:01:41 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 22:01:41 -0300
+
+
+Started GET "/assets/empresas.js?body=1" for 127.0.0.1 at 2015-11-13 22:01:41 -0300
+
+
+Started GET "/assets/vens.js?body=1" for 127.0.0.1 at 2015-11-13 22:01:41 -0300
+
+
+Started GET "/assets/vens.js?body=1" for 127.0.0.1 at 2015-11-13 22:01:41 -0300
+
+
+Started GET "/clientes" for 127.0.0.1 at 2015-11-13 22:01:42 -0300
+Processing by ClientesController#index as HTML
+  [1m[35mCliente Load (0.0ms)[0m  SELECT "clientes".* FROM "clientes"
+  Rendered clientes/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios"  WHERE "usuarios"."id" = 2  ORDER BY "usuarios"."id" ASC LIMIT 1[0m
+  Rendered shared/_navbar.html.erb (3.0ms)
+Completed 200 OK in 121ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-11-13 22:01:44 -0300
+Processing by ClientesController#new as HTML
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT  "usuarios".* FROM "usuarios"  WHERE "usuarios"."id" = 2  ORDER BY "usuarios"."id" ASC LIMIT 1
+  Rendered clientes/_form.html.erb (6.0ms)
+  Rendered clientes/new.html.erb within layouts/application (8.0ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 127ms (Views: 122.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/clientes" for 127.0.0.1 at 2015-11-13 22:01:46 -0300
+Processing by ClientesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sUfB9IXNAHvkVJ3zTDjK7PCZvsfI5p2TISo1NtEQRf8=", "cliente"=>{"rut"=>"", "nombre"=>"", "apellidoP"=>"", "apellidoM"=>"", "comuna"=>"", "direccion"=>"", "usuario_id"=>"2"}, "commit"=>"Create Cliente"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios"  WHERE "usuarios"."id" = 2  ORDER BY "usuarios"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: usuario_id):
+  app/controllers/clientes_controller.rb:31:in `create'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.0ms)
+
+
+Started DELETE "/usuarios/sign_out" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sUfB9IXNAHvkVJ3zTDjK7PCZvsfI5p2TISo1NtEQRf8="}
+  [1m[35mUsuario Load (1.0ms)[0m  SELECT  "usuarios".* FROM "usuarios"  WHERE "usuarios"."id" = 2  ORDER BY "usuarios"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+Processing by InicioController#index as HTML
+  Rendered inicio/index.html.erb within layouts/application (0.0ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 113ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/empresas.css?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/productos.css?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/vendedors.css?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/vens.css?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/empresas.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/productos.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/vendedors.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/vens.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/empresas.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/vendedors.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/assets/vens.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:31 -0300
+
+
+Started GET "/usuarios/sign_up" for 127.0.0.1 at 2015-11-13 22:02:32 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.0ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 120ms (Views: 119.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iVwDFf3jgoTT72B1bMEGolzo9jAv3Z232V1iMPRb/GE=", "usuario"=>{"email"=>"v@v.cl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsuario Exists (0.0ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE "usuarios"."email" = 'v@v.cl' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-11-14 01:02:45.233864"], ["email", "v@v.cl"], ["encrypted_password", "$2a$10$tZA7Y7t2FgRMECBs2A5Iwe/tGNxTZy3mzRUnM6dCCtm8Fv7/Bvc4q"], ["updated_at", "2015-11-14 01:02:45.233864"]]
+  [1m[35m (55.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[35mSQL (0.0ms)[0m  UPDATE "usuarios" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "usuarios"."id" = 3  [["current_sign_in_at", "2015-11-14 01:02:45.292867"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2015-11-14 01:02:45.292867"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2015-11-14 01:02:45.293867"]]
+  [1m[36m (42.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 174ms (ActiveRecord: 98.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+Processing by InicioController#index as HTML
+  Rendered inicio/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT  "usuarios".* FROM "usuarios"  WHERE "usuarios"."id" = 3  ORDER BY "usuarios"."id" ASC LIMIT 1
+  Rendered shared/_navbar.html.erb (2.0ms)
+Completed 200 OK in 118ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/empresas.css?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/inicio.css?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/vens.css?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/productos.css?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/vendedors.css?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/empresas.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/inicio.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/productos.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/vens.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/assets/vendedors.js?body=1" for 127.0.0.1 at 2015-11-13 22:02:45 -0300
+
+
+Started GET "/clientes" for 127.0.0.1 at 2015-11-13 22:02:46 -0300
+Processing by ClientesController#index as HTML
+  [1m[36mCliente Load (0.0ms)[0m  [1mSELECT "clientes".* FROM "clientes"[0m
+  Rendered clientes/index.html.erb within layouts/application (1.0ms)
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT  "usuarios".* FROM "usuarios"  WHERE "usuarios"."id" = 3  ORDER BY "usuarios"."id" ASC LIMIT 1
+  Rendered shared/_navbar.html.erb (2.0ms)
+Completed 200 OK in 116ms (Views: 116.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2015-11-13 22:02:47 -0300
+Processing by ClientesController#new as HTML
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios"  WHERE "usuarios"."id" = 3  ORDER BY "usuarios"."id" ASC LIMIT 1[0m
+  Rendered clientes/_form.html.erb (3.0ms)
+  Rendered clientes/new.html.erb within layouts/application (4.0ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 119ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/clientes" for 127.0.0.1 at 2015-11-13 22:02:52 -0300
+Processing by ClientesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iVwDFf3jgoTT72B1bMEGolzo9jAv3Z232V1iMPRb/GE=", "cliente"=>{"rut"=>"dsd", "nombre"=>"dsdsd", "apellidoP"=>"sdsd", "apellidoM"=>"sdsd", "comuna"=>"sd", "direccion"=>"sd", "usuario_id"=>"3"}, "commit"=>"Create Cliente"}
+  [1m[35mUsuario Load (0.0ms)[0m  SELECT  "usuarios".* FROM "usuarios"  WHERE "usuarios"."id" = 3  ORDER BY "usuarios"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: usuario_id):
+  app/controllers/clientes_controller.rb:31:in `create'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.0ms)
+
+
+Started POST "/clientes" for 127.0.0.1 at 2015-11-13 22:06:16 -0300
+Processing by ClientesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iVwDFf3jgoTT72B1bMEGolzo9jAv3Z232V1iMPRb/GE=", "cliente"=>{"rut"=>"dsd", "nombre"=>"dsdsd", "apellidoP"=>"sdsd", "apellidoM"=>"sdsd", "comuna"=>"sd", "direccion"=>"sd", "usuario_id"=>"3"}, "commit"=>"Create Cliente"}
+  [1m[36mUsuario Load (0.0ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios"  WHERE "usuarios"."id" = 3  ORDER BY "usuarios"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 19ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: usuario_id):
+  app/controllers/clientes_controller.rb:31:in `create'
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.0ms)
