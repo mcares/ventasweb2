@@ -6,5 +6,5 @@ class Cliente < ActiveRecord::Base
   has_many :producto, :through => :ven
 
 
-validates :nombre, :apellidoP ,:apellidoM, :direccion, :presence => { message: "No puede dejarse vacío" }
+validates :nombre, :apellidoP ,:apellidoM, :direccion, :rut, :presence => { message: "No puede dejarse vacío" }
 end

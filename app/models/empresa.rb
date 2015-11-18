@@ -1,6 +1,6 @@
 class Empresa < ActiveRecord::Base
 
-  validates :nombre, :rubro, :presence => { message: "No puede dejarse vacío" }
+  validates :nombre, :rubro, :rut, :presence => { message: "No puede dejarse vacío" }
 
 
 end
